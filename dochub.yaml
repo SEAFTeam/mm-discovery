@@ -1,0 +1,17 @@
+# Метаданные пакета
+$package:
+  hexagon: # Идентификатор пакета
+    # Краткое название пакета
+    name: Metamodel Discovery 
+    # Поставщик
+    vendor: Sber & @rpiontik
+    # Описание
+    description: Пакет предназначен для исследования и визуализации метамодели в DocHub.
+    # Версия
+    version: 1.2.0
+    # Зависимости от других пакетов
+    dependencies:
+      dochub: ">=3.8.0"
+
+imports:
+  - entities/root.yaml
