@@ -107,7 +107,7 @@ entities:
           
                   $r0 ? $r0 : (
                     $r1 := $deep.type = "object" 
-                        ? $scan_props($merge([$deep.properties, $deep.patternProperties]));
+                        ? $scan_props($merge([$deep.**.properties, $deep.**.patternProperties]));
                     $r2 := $deep.type = "array"
                         ? $scan($deep.items);
                     $r3 := $deep."$ref"~>$substring(0, 8) = "#/$rels/" 
